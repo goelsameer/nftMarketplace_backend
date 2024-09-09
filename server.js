@@ -31,7 +31,7 @@ const nftIds = ['cryptopunks', 'bored-ape-yacht-club', 'mutant-ape-yacht-club', 
   const options = {
     headers: {
       accept: 'application/json',
-      'x-cg-api-key': 'CG-M8guAaGSaW59yS3HabhS2qsJ'
+      'x-cg-api-key': process.env.X_CG_API_KEY
     }
   };
   

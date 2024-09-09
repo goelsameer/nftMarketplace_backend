@@ -15,7 +15,10 @@ app.use(express.json());
 let finalData=[];
 let timestamp=Date.now();
 
-mongoose.connect(process.env.MongoDB_URI)
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
   .then(() => console.log("MongoDB connected!"))
   .catch(err => console.log(err));
 
